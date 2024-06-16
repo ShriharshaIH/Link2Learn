@@ -1,0 +1,350 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:900&display=swap");
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #151719; /* Dark background color */
+    color: #fff; /* Light text color */
+}
+
+.bg-image {
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    mask-image: linear-gradient(to top, rgba(176, 176, 176, 0.699), rgba(0, 0, 0, 1));
+}
+
+.mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.text-white {
+    color: #fff;
+}
+
+.slogan {
+    opacity: 0;
+    animation: fadeIn 1s ease forwards, moveLeft 1s ease forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes moveLeft {
+    from {
+        transform: translateX(50px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+
+.resource-section {
+    padding: 40px 0;
+    background-color: #222; /* Dark background color */
+}
+
+.resource-box {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+    overflow: hidden;
+    animation: fadeInUp 1s ease forwards;
+}
+
+.resource-content {
+    padding: 10px;
+}
+
+.resource-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.resource-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.icon {
+    margin: 0 100px 20px 0;
+    text-align: center;
+}
+
+.icon img {
+    width: 140px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.icon span {
+    display: block;
+    font-size: 16px;
+}
+
+/* Service box hover effect */
+.service-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.702);
+}
+
+/* Resource icon hover effect */
+.icon:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+/* Add this CSS to your home.css file */
+
+.resource-title {
+    margin: 0 100px 20px;
+    font-size: 36px; /* Increase font size */
+    text-align: center; /* Center align the title */
+}
+
+
+/* Add this CSS to your home.css file */
+
+.resource-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.button-wrapper {
+    margin: 0 60px; /* Adjust the margin between buttons */
+}
+
+.btn {
+    font-size: 24px;
+    padding: 15px 30px;
+    border-radius: 50px;
+    transition: transform 0.3s ease;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Join Section Styles */
+.join {
+    background-color: #d8d3d3ed; /* Light background color */
+    padding: 50px 0;
+  }
+  
+  .join .container {
+    text-align: center;
+  }
+  
+  .join h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333; /* Dark text color */
+  }
+  
+  .join p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555; /* Medium text color */
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .join h2 {
+      font-size: 28px;
+    }
+    
+    .join p {
+      font-size: 16px;
+    }
+  }
+  
+  .paragraph {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #eee;
+    text-align: center;
+    margin: 40px auto;
+    max-width: 800px;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.paragraph strong {
+    color: #ffa500;
+}
+
+
+.main-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #222;
+    color: #fff;
+  }
+  
+  .main-title {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+  
+  .category-container {
+    margin-bottom: 40px;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .data-table-container {
+    overflow-x: auto;
+  }
+  
+  .data-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #333;
+  }
+  
+  th, td {
+    padding: 15px;
+    text-align: left;
+  }
+  
+  th {
+    font-weight: bold;
+    background-color: #444;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #555;
+  }
+  
+  a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .content {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #333;
+  }
+  
+  .content p {
+    margin-bottom: 10px;
+  }
+
+  
+  .main-container-abc {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .title-main {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+  
+  .quality-section-xyz {
+    margin-top: 40px;
+  }
+  
+  .heading-section {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .description-section {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .image-container-abc {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .education-image-1,
+  .education-image-2,
+  .education-image-3 {
+    width: 40%;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .quality-section-xyz {
+    /* Your styles for the outer container */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .container-img {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .text-container {
+    width: 45%;
+    margin: 0 auto; /* Center the container horizontally */
+    text-align: justify; /* Align text to justify */
+  }
+  
+  
+  .description-section {
+    /* Your styles for the description paragraphs */
+  }
+  
+  .image-container {
+    width: 45%; /* Adjust as needed */
+    position: relative;
+  }
+  
+  .education-image {
+    width: 300px;
+    height: 50px;
+    height: auto;
+    border-radius: 50%;
+    transition: transform 0.3s;
+  }
+  
+  .image-container:hover .education-image {
+    transform: scale(1.1);
+  }
+  
